@@ -1,0 +1,55 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* VARIAVEIS */
+:root {
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+  --color-primary: #0070f3;
+
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 11px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #202938; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #394d68; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #202938; /* creates padding around scroll thumb */
+}

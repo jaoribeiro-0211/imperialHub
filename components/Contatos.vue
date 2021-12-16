@@ -1,0 +1,140 @@
+<template>
+  <div class="styleContatos" id="contatos">
+    <!-- <span class="subTitle">Contatos</span> -->
+    <div class="gridInfo">
+      <div class="textContact">
+        <p>
+          Entre em contato <br />
+          com a gente!
+        </p>
+        <span>
+          Entre em contato com a Beautysalon, <br />
+          queremos tirar suas dúvidas, ouvir <br />
+          suas críticas e sugestões.
+        </span>
+        <br />
+        <button class="btnDuvidas">
+          <img src="/WhatsApp.svg" width="22px" alt="Logo WhatsApp" />
+          Entrar em contato
+        </button>
+      </div>
+      <div class="infoContact">
+        <div class="tel" v-scroll-reveal.reset>
+          <phone-icon size="1.5x" class="iconCustom"></phone-icon>
+          <span>(017) 98141-8990</span>
+        </div>
+        <div class="email" v-scroll-reveal.reset="{ delay: 150 }">
+          <mail-icon size="1.5x" class="iconCustom"></mail-icon>
+          <span>jose@nariz.grande.nareba</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { PhoneIcon, MailIcon } from "vue-feather-icons";
+export default {
+  components: {
+    PhoneIcon,
+    MailIcon,
+  },
+};
+</script>
+
+<style scoped>
+.styleContatos {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin: 64px auto;
+}
+.subTitle {
+  color: white;
+  font-size: 2.225rem;
+  font-family: var(--title-font);
+  font-weight: bold;
+  margin-top: 3rem;
+  border-bottom: 2px solid #0070f3;
+}
+.gridInfo {
+  display: grid;
+  grid-template-areas: "textContact infoContact";
+  grid-template-columns: 50% 50%;
+  color: white;
+  margin: 64px 0px 64px 0px;
+}
+.textContact {
+  grid-area: textContact;
+  text-align: center;
+}
+.textContact p {
+  font-family: var(--title-font);
+  font-size: 2.225rem;
+  font-weight: bold;
+}
+.textContact span {
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+}
+.btnDuvidas {
+  width: 300px;
+  color: white;
+  /* background-color: #0164d6; */
+  background-image: linear-gradient(to right, #bd3aa4, #5062e3);
+  padding: 15px;
+  border-radius: 2rem;
+  filter: drop-shadow(5px 5px 10px rgba(125, 81, 197, 0.25));
+  transition: background-image 4s 2s;
+  font-family: var(--body-font);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px auto 0 auto;
+}
+.btnDuvidas img {
+  margin-right: 10px;
+}
+.infoContact {
+  grid-area: infoContact;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+}
+.tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tel span {
+  margin-left: 10px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email span {
+  margin-left: 10px;
+}
+.iconCustom {
+  color: #0070f3;
+}
+@media (max-width: 768px) {
+  .gridInfo {
+    display: grid;
+    grid-template-areas: "textContact " "infoContact";
+    grid-template-columns: 100% 100%;
+    color: white;
+    margin: 64px 0px 64px 0px;
+  }
+  .infoContact {
+    margin-top: 48px;
+  }
+}
+</style>
