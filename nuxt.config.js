@@ -74,11 +74,11 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  builds: [
-    {
+  build: [
+    /*  {
       src: "nuxt.config.js",
       use: "@nuxtjs/vercel-builder",
-      config: { serverFiles: ["package.json"] },
-    },
+      config: {},
+    }, */
   ],
 };
