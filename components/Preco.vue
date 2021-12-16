@@ -6,7 +6,7 @@
       grandes categorias.
     </p>
     <div class="table" v-scroll-reveal.reset>
-      <v-simple-table class="tablePrice" dark>
+      <v-simple-table class="tablePrice" dark style="background-color: #394d68">
         <template v-slot:default>
           <thead>
             <tr>
@@ -30,36 +30,6 @@
           </tbody>
         </template>
       </v-simple-table>
-      <!--  <table border="1" class="tablePrice">
-        <thead>
-          <tr>
-            <th>Pacotes</th>
-            <th>1K</th>
-            <th>30K</th>
-            <th>100K</th>
-            <th>250K</th>
-            <th>+250K</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Quantidade</td>
-            <td>1.000</td>
-            <td>30.000</td>
-            <td>100.000</td>
-            <td>250.000</td>
-            <td>+250.000</td>
-          </tr>
-          <tr>
-            <td>Preço Crédito</td>
-            <td>R$ 0,09</td>
-            <td>R$ 0,07</td>
-            <td>R$ 0,06</td>
-            <td>R$ 0,05</td>
-            <td>Consulte</td>
-          </tr>
-        </tbody>
-      </table> -->
     </div>
     <p class="titlePrice">Simulação de preços</p>
     <div style="width: 60%">

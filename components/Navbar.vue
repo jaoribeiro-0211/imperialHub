@@ -101,6 +101,9 @@ export default {
   z-index: 100;
   width: 100%;
   background-color: #202938;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 
 #header.scroll {
