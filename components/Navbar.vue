@@ -9,19 +9,23 @@
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
-          <li><a class="title" href="#home">Início</a></li>
-          <li><a class="title" href="#sobre">Sobre</a></li>
-          <li><a class="title" href="#preco">Preço</a></li>
-          <li><a class="title" href="#duvidas">Dúvidas</a></li>
-          <li><a class="title" href="#contatos">Contatos</a></li>
+          <li><a class="title" @click="listMenu" href="#home">Início</a></li>
+          <li><a class="title" @click="listMenu" href="#sobre">Sobre</a></li>
+          <li><a class="title" @click="listMenu" href="#preco">Preço</a></li>
+          <li>
+            <a class="title" @click="listMenu" href="#duvidas">Dúvidas</a>
+          </li>
+          <li>
+            <a class="title" @click="listMenu" href="#contatos">Contatos</a>
+          </li>
         </ul>
       </div>
       <!-- Menu mobile -->
-      <div class="toggle icon-menu">
-        <AlignJustifyIcon class="icon" @click="showMenu"></AlignJustifyIcon>
+      <div class="toggle icon-menu" @click="menu">
+        <AlignJustifyIcon class="icon"></AlignJustifyIcon>
       </div>
-      <div class="toggle icon-close">
-        <XIcon class="icon" @click="hideMenu"></XIcon>
+      <div class="toggle icon-close" @click="menu">
+        <XIcon class="icon"></XIcon>
       </div>
     </nav>
   </header>
@@ -34,26 +38,18 @@ export default {
     return {};
   },
   methods: {
-    showMenu() {
+    menu() {
       /* Abrir Menu */
       const nav = document.querySelector("#header nav");
       const toggle = document.querySelectorAll("nav .toggle");
 
-      for (const element of toggle) {
-        element.addEventListener("click", function () {
-          nav.classList.toggle("show");
-        });
-      }
+      nav.classList.toggle("show");
     },
-    hideMenu() {
+    listMenu() {
       /* Fechar Menu */
-      const nav = document.querySelector("#header nav");
+      var navHide = document.querySelector("#header nav");
       const links = document.querySelectorAll("nav ul li a");
-      for (const link of links) {
-        link.addEventListener("click", function () {
-          nav.classList.remove("show");
-        });
-      }
+      navHide.classList.remove("show");
     },
   },
   components: {
@@ -63,7 +59,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .v-application .title {
   font-size: 1.1rem !important;
   font-weight: 500;
@@ -93,7 +89,7 @@ export default {
 #header {
   border-bottom: 1px solid #808080;
   margin-bottom: 2rem;
-  display: flex;
+  /*   display: flex; */
 
   position: fixed;
   top: 0;
@@ -101,9 +97,9 @@ export default {
   z-index: 100;
   width: 100%;
   background-color: #202938;
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 12px; */
 }
 
 #header.scroll {
