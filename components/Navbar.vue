@@ -89,7 +89,7 @@ export default {
 #header {
   border-bottom: 1px solid #808080;
   margin-bottom: 2rem;
-  /*   display: flex; */
+  display: flex;
 
   position: fixed;
   top: 0;
