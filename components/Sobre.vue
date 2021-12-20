@@ -143,7 +143,7 @@ export default {
     align-items: center;
   }
   .gridCampanha {
-    margin-top: 0px;
+    margin-top: 40px;
   }
   .gridIntervalo {
     margin-top: 0px;
