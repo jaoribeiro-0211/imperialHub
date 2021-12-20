@@ -142,5 +142,11 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  .gridCampanha {
+    margin-top: 0px;
+  }
+  .gridIntervalo {
+    margin-top: 0px;
+  }
 }
 </style>

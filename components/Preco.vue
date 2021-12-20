@@ -42,7 +42,7 @@
         thumb-size="45"
       ></v-slider>
     </div>
-    <p class="priceDescription">( {{ qtdMsg }} x R$ {{ price }} )</p>
+    <p class="priceDescription">( {{ qtdMsg2 }} x R$ {{ priceUnitary }} )</p>
     <p class="price">R$ {{ price }}</p>
     <button class="btnContanto">Entrar em contato</button>
   </div>
@@ -50,10 +50,17 @@
 
 <script>
 export default {
+  mounted() {
+    this.qtdMsg2 = this.qtdMsg.toLocaleString("pt-br", {
+      minimumFractionDigits: 0,
+    });
+  },
   data() {
     return {
-      price: "0,09",
+      price: 0.09,
+      priceUnitary: 0.09,
       qtdMsg: "1000",
+      qtdMsg2: null,
       desserts: [
         {
           pacote: "Quantidade",
@@ -74,16 +81,40 @@ export default {
       ],
     };
   },
+  methods: {
+    formatarValor() {
+      this.qtdMsg2 = this.qtdMsg.toLocaleString("pt-br", {
+        minimumFractionDigits: 0,
+      });
+    },
+  },
   watch: {
     qtdMsg() {
       if (this.qtdMsg >= 1000 && this.qtdMsg < 30000) {
-        this.price = "0,09";
+        this.price = `${Math.round(0.09 * this.qtdMsg).toLocaleString("pt-br", {
+          minimumFractionDigits: 2,
+        })}`;
+        this.formatarValor();
+
+        this.priceUnitary = 0.09;
       } else if (this.qtdMsg >= 30000 && this.qtdMsg < 100000) {
-        this.price = "0,07";
+        this.price = `${Math.round(0.07 * this.qtdMsg).toLocaleString("pt-br", {
+          minimumFractionDigits: 2,
+        })}`;
+        this.formatarValor();
+        this.priceUnitary = 0.07;
       } else if (this.qtdMsg >= 100000 && this.qtdMsg < 250000) {
-        this.price = "0,06";
+        this.price = `${Math.round(0.06 * this.qtdMsg).toLocaleString("pt-br", {
+          minimumFractionDigits: 2,
+        })}`;
+        this.formatarValor();
+        this.priceUnitary = 0.06;
       } else if (this.qtdMsg >= 250000) {
-        this.price = "0,05";
+        this.price = `${Math.round(0.05 * this.qtdMsg).toLocaleString("pt-br", {
+          minimumFractionDigits: 2,
+        })}`;
+        this.formatarValor();
+        this.priceUnitary = 0.05;
       }
     },
   },
