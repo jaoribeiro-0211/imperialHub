@@ -2,7 +2,12 @@
   <div>
     <v-divider dark></v-divider>
     <div class="footer">
-      <img src="/image.png" width="200px" alt="" v-scroll-reveal.reset />
+      <img
+        src="/Logo ImperialHub - Dark.png"
+        width="200px"
+        alt=""
+        v-scroll-reveal.reset
+      />
       <p>© {{ new Date().getFullYear() }} ImperialHub</p>
       <p>Todos os direitos reservados.</p>
     </div>

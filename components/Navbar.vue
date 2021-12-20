@@ -1,7 +1,11 @@
 <template>
   <header id="header">
     <nav class="container">
-      <img class="logoImperialHub" src="/image.png" alt="ImperialHub" />
+      <img
+        class="logoImperialHub"
+        src="/Logo ImperialHub - Dark.png"
+        alt="ImperialHub"
+      />
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
