@@ -8,8 +8,8 @@
         alt=""
         v-scroll-reveal.reset
       />
-      <p v-scroll-reveal.reset>© {{ new Date().getFullYear() }} ImperialHub</p>
-      <p v-scroll-reveal.reset>Todos os direitos reservados.</p>
+      <p>© {{ new Date().getFullYear() }} ImperialHub</p>
+      <p>Todos os direitos reservados.</p>
     </div>
   </div>
 </template>
