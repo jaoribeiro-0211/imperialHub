@@ -44,12 +44,18 @@
     </div>
     <p class="priceDescription">( {{ qtdMsg2 }} x R$ {{ priceUnitary }} )</p>
     <p class="price">R$ {{ price }}</p>
-    <button class="btnContanto">Entrar em contato</button>
+    <!--  <button class="btnContanto">Entrar em contato</button> -->
+    <BotaoContato
+      textButton="Agende uma demonstração"
+      style="margin-top: 32px"
+    />
   </div>
 </template>
 
 <script>
+import BotaoContato from "./BotaoContato.vue";
 export default {
+  components: { BotaoContato },
   mounted() {
     this.qtdMsg2 = this.qtdMsg.toLocaleString("pt-br", {
       minimumFractionDigits: 0,
@@ -191,11 +197,11 @@ export default {
     margin: 2rem 0rem 1rem 0rem;
   }
 }
-.btnContanto {
+/* .btnContanto {
   margin-top: 32px;
   width: 300px;
   color: white;
-  /* background-color: #0164d6; */
+ 
   background-image: linear-gradient(to right, #bd3aa4, #5062e3);
   padding: 15px;
   border-radius: 2rem;
@@ -205,4 +211,7 @@ export default {
   font-weight: 600;
   font-size: 1rem;
 }
+.btnContanto:hover {
+  background-image: linear-gradient(to right, #d643bb, #5b6df7);
+} */
 </style>

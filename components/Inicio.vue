@@ -12,7 +12,8 @@
         Com a imperialhub voce aumenta seus lucros, disparando mensagens com uma
         <span>taxa de abertura acima de 95%.</span>
       </p>
-      <button>Agende uma demonstração</button>
+      <!--  <button>Agende uma demonstração</button> -->
+      <ButtonContato textButton="Agende uma demonstração" />
     </div>
     <div class="gridHome2" v-scroll-reveal.reset="{ delay: 250 }">
       <img src="/Robo Home.svg" class="imgRobo" alt="Robo Imagem" />
@@ -21,7 +22,10 @@
 </template>
 
 <script>
-export default {};
+import ButtonContato from "./BotaoContato.vue";
+export default {
+  components: { ButtonContato },
+};
 </script>
 
 <style  scoped>
@@ -55,10 +59,10 @@ export default {};
 .gridHome1 h1 span {
   color: #f0d10c;
 }
-.gridHome1 button {
+/* .gridHome1 button {
   width: 300px;
   color: white;
-  /* background-color: #0164d6; */
+ 
   background-image: linear-gradient(to right, #bd3aa4, #5062e3);
   padding: 15px;
   border-radius: 2rem;
@@ -69,7 +73,7 @@ export default {};
 }
 .gridHome1 button:hover {
   background-image: linear-gradient(to right, #d643bb, #5b6df7);
-}
+} */
 .gridHome2 {
   grid-area: gridHome2;
   display: flex;
@@ -120,7 +124,7 @@ export default {};
     grid-template-areas: "gridHome2" "gridHome1";
     grid-template-columns: 100% 100%;
     /* grid-template-rows: 350px 350px; */
-    padding: 20px 40px;
+    padding: 70px 40px;
     gap: 30px;
   }
   .imgRobo {
@@ -137,10 +141,10 @@ export default {};
   .gridHome1 p {
     font-size: 1.2rem;
   }
-  .gridHome1 button {
+  /*  .gridHome1 button {
     font-size: 1rem;
     width: 300px;
-  }
+  } */
 }
 
 @media (max-width: 350px) {

@@ -13,10 +13,15 @@
           suas críticas e sugestões.
         </span>
         <br />
-        <button class="btnDuvidas">
+        <!--   <button class="btnDuvidas">
           <img src="/WhatsApp.svg" width="22px" alt="Logo WhatsApp" />
           Entrar em contato
-        </button>
+        </button> -->
+        <BotaoContato
+          textButton="Entrar em contato"
+          iconButton="true"
+          style="margin: 32px auto 0 auto"
+        />
       </div>
       <div class="infoContact">
         <div class="tel" v-scroll-reveal.reset>
@@ -34,10 +39,12 @@
 
 <script>
 import { PhoneIcon, MailIcon } from "vue-feather-icons";
+import BotaoContato from "./BotaoContato.vue";
 export default {
   components: {
     PhoneIcon,
     MailIcon,
+    BotaoContato,
   },
 };
 </script>
@@ -77,10 +84,10 @@ export default {
   font-family: var(--body-font);
   font-size: 1.125rem;
 }
-.btnDuvidas {
+/* .btnDuvidas {
   width: 300px;
   color: white;
-  /* background-color: #0164d6; */
+  
   background-image: linear-gradient(to right, #bd3aa4, #5062e3);
   padding: 15px;
   border-radius: 2rem;
@@ -93,9 +100,12 @@ export default {
   justify-content: center;
   margin: 32px auto 0 auto;
 }
+.btnDuvidas:hover {
+  background-image: linear-gradient(to right, #d643bb, #5b6df7);
+}
 .btnDuvidas img {
   margin-right: 10px;
-}
+} */
 .infoContact {
   grid-area: infoContact;
   display: flex;
