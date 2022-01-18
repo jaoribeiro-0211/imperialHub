@@ -130,7 +130,7 @@ export default {
   /* margin-top: 160px; */
   max-width: 1200px;
   margin: 0px auto;
-  padding: 160px 0px;
+  padding: 100px 0px 100px 0px;
 }
 .subTitle {
   color: white;

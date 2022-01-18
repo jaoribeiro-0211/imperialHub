@@ -90,7 +90,6 @@ export default {
   border-bottom: 1px solid #808080;
   margin-bottom: 2rem;
   display: flex;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -99,7 +98,7 @@ export default {
   background-color: #202938;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  /*  padding: 12px; */
 }
 
 #header.scroll {

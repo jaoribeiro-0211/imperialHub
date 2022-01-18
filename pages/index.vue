@@ -59,7 +59,4 @@ export default {
   opacity: 1;
   transform: translateY(0);
 }
-:target {
-  scroll-margin-top: 1rem;
-}
 </style>

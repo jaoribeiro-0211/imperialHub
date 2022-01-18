@@ -46,7 +46,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 130px 0px 160px 0px;
+  padding: 100px 0px 70px 0px;
 }
 .subTitle {
   color: white;
@@ -75,6 +75,7 @@ export default {
   grid-area: gridWifi;
   height: 330px;
 }
+
 .gridCampanha {
   grid-area: gridCampanha;
   height: 250px;
