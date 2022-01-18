@@ -31,7 +31,7 @@
         <div class="email" v-scroll-reveal.reset="{ delay: 150 }">
           <mail-icon size="1.5x" class="iconCustom"></mail-icon>
           <span
-            ><a href="mailto:imperialHub.whats@gmail.com"
+            ><a href="mailto:imperialhub.whats@gmail.com"
               >imperialHub.whats@gmail.com</a
             >
           </span>
