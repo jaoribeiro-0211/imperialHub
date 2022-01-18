@@ -32,7 +32,7 @@
           <mail-icon size="1.5x" class="iconCustom"></mail-icon>
           <span
             ><a href="mailto:imperialhub.whats@gmail.com"
-              >imperialHub.whats@gmail.com</a
+              >imperialhub.whats@gmail.com</a
             >
           </span>
         </div>
