@@ -26,11 +26,15 @@
       <div class="infoContact">
         <div class="tel" v-scroll-reveal.reset>
           <phone-icon size="1.5x" class="iconCustom"></phone-icon>
-          <span>(017) 98141-8990</span>
+          <span> <a href="tel:17981707070">(017)98170-7070</a> </span>
         </div>
         <div class="email" v-scroll-reveal.reset="{ delay: 150 }">
           <mail-icon size="1.5x" class="iconCustom"></mail-icon>
-          <span>jose@nariz.grande.nareba</span>
+          <span
+            ><a href="mailto:imperialHub.whats@gmail.com"
+              >imperialHub.whats@gmail.com</a
+            >
+          </span>
         </div>
       </div>
     </div>
@@ -131,6 +135,10 @@ export default {
 }
 .email span {
   margin-left: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 .iconCustom {
   color: #0070f3;

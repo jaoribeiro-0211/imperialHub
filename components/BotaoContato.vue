@@ -14,7 +14,7 @@ export default {
   props: { textButton: String, iconButton: String },
   methods: {
     contatoWhatsApp() {
-      window.location.href = `https://wa.me/${"5517981491818"}?text=Eu%20tenho%20interesse%20`;
+      window.location.href = `https://wa.me/${"5517991077804"}?text=Olá,%20gostaria%20de%20agendar%20uma%20demonstração.`;
     },
   },
 };
