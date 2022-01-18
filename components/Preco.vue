@@ -2,8 +2,9 @@
   <div class="stylePreco" id="preco">
     <span class="subTitle" v-scroll-reveal.reset="{ delay: 250 }">Preço</span>
     <p class="description" v-scroll-reveal.reset>
-      Os recursos do Pragma estão em constante expansão e são divididos em três
-      grandes categorias.
+      Aqui você não precisa realizar a contratação de planos mensais, nem manter
+      um fluxo pré determinado de envio, basta adquirir um pacote e começar a
+      usar.
     </p>
     <div class="table" v-scroll-reveal.reset>
       <v-simple-table class="tablePrice" dark style="background-color: #394d68">
@@ -96,7 +97,7 @@ export default {
   },
   watch: {
     qtdMsg() {
-      if (this.qtdMsg >= 1000 && this.qtdMsg < 30000) {
+      if (this.qtdMsg >= 0 && this.qtdMsg < 30000) {
         this.price = `${Math.round(0.09 * this.qtdMsg).toLocaleString("pt-br", {
           minimumFractionDigits: 2,
         })}`;

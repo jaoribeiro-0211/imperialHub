@@ -9,7 +9,7 @@
         >
       </h1>
       <p>
-        Com a imperialhub voce aumenta seus lucros, disparando mensagens com uma
+        Com a imperialhub você aumenta seus lucros, disparando mensagens com uma
         <span>taxa de abertura acima de 95%.</span>
       </p>
       <!--  <button>Agende uma demonstração</button> -->
