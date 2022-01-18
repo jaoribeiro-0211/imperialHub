@@ -98,7 +98,8 @@ export default {
   background-color: #202938;
   align-items: center;
   justify-content: center;
-  /*  padding: 12px; */
+  /* Padding é necessario somente quando for subir o projeto */
+  padding: 12px;
 }
 
 #header.scroll {
