@@ -13,12 +13,12 @@
         <ul class="grid">
           <li>
             <a
-              class="title"
+              class="title home"
               @click="
                 listMenu();
                 topScroll();
               "
-              href=""
+              href="#"
               >Início</a
             >
           </li>
@@ -83,6 +83,7 @@ export default {
   font-family: "Poppins", sans-serif !important;
 }
 /*====  LAYOUT ============================ */
+
 .icon {
   color: white;
 }

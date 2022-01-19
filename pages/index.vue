@@ -7,7 +7,7 @@
     <Duvidas />
     <Contatos />
     <Footer />
-    <a href="" class="buttomHome" @click="topScroll">
+    <a href="#" class="buttomHome" @click="topScroll">
       <arrow-up-icon size="2x" class="custom-class"></arrow-up-icon>
     </a>
   </div>
