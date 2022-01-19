@@ -11,7 +11,17 @@
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
-          <li><a class="title" @click="listMenu" href="#home">Início</a></li>
+          <li>
+            <a
+              class="title"
+              @click="
+                listMenu();
+                topScroll();
+              "
+              href=""
+              >Início</a
+            >
+          </li>
           <li><a class="title" @click="listMenu" href="#sobre">Sobre</a></li>
           <li><a class="title" @click="listMenu" href="#preco">Preço</a></li>
           <li>
@@ -40,6 +50,9 @@ export default {
     return {};
   },
   methods: {
+    topScroll() {
+      window.scrollTo(0, 0);
+    },
     menu() {
       /* Abrir Menu */
       const nav = document.querySelector("#header nav");

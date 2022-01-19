@@ -7,7 +7,7 @@
     <Duvidas />
     <Contatos />
     <Footer />
-    <a href="#home" class="buttomHome">
+    <a href="" class="buttomHome" @click="topScroll">
       <arrow-up-icon size="2x" class="custom-class"></arrow-up-icon>
     </a>
   </div>
@@ -18,6 +18,11 @@ import { ArrowUpIcon } from "vue-feather-icons";
 export default {
   components: {
     ArrowUpIcon,
+  },
+  methods: {
+    topScroll() {
+      window.scrollTo(0, 0);
+    },
   },
   mounted() {
     const buttomHome = document.querySelector(".buttomHome");
