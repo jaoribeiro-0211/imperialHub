@@ -114,7 +114,7 @@ export default {
   align-items: center;
   justify-content: center;
   /* Padding é necessario somente quando for subir o projeto */
-  padding: 12px;
+  padding: 12px 12px 10px 12px;
 }
 
 #header.scroll {
