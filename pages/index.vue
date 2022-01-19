@@ -43,7 +43,7 @@ export default {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +53,14 @@ export default {
   visibility: hidden;
   transition: 0.3s;
   transform: translateY(100%);
+}
+@media (max-width: 1024px) {
+  .buttomHome {
+    width: 45px;
+    height: 45px;
+    box-shadow: rgba(1, 100, 214, 0.466) 0px 2px 15px;
+    border: 1px solid #0164d6;
+  }
 }
 .buttomHome.show {
   visibility: visible;

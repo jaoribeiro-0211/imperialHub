@@ -163,6 +163,11 @@ export default {
   font-weight: bold;
   font-family: var(--body-font);
 }
+@media (max-width: 1024px) {
+  .titlePrice {
+    margin: 48px 0px 64px 0px;
+  }
+}
 .priceDescription {
   font-family: var(--body-font);
   color: white;
