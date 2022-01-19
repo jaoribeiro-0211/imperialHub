@@ -159,11 +159,11 @@ export default {
 .titlePrice {
   color: white;
   font-size: 1.125rem;
-  margin: 32px 0px;
+  margin: 32px 0px 64px 0px;
   font-weight: bold;
   font-family: var(--body-font);
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .titlePrice {
     margin: 48px 0px 64px 0px;
   }

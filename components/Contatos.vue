@@ -26,7 +26,7 @@
       <div class="infoContact">
         <div class="tel" v-scroll-reveal.reset>
           <phone-icon size="1.5x" class="iconCustom"></phone-icon>
-          <span> <a href="tel:17991077804">(017)99107-7804</a> </span>
+          <span> <a href="tel:17991077804">(017) 99107-7804</a> </span>
         </div>
         <div class="email" v-scroll-reveal.reset="{ delay: 150 }">
           <mail-icon size="1.5x" class="iconCustom"></mail-icon>
