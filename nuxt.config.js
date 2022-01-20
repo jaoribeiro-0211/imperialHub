@@ -20,7 +20,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/Icon-ImperialHub.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/ImperialIcon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       {
