@@ -31,6 +31,11 @@ export default {
                 name: "robots",
                 content: "index,nofollow",
             },
+            {
+                hid: "robots",
+                name: "robots",
+                content: "index,nofollow",
+            },
             /* Twitter */
             {
                 hid: "twitter:card",
@@ -84,6 +89,11 @@ export default {
                 content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
             },
             {
+                hid: "og:image:secure_url",
+                name: "og:image:secure_url",
+                content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
+            },
+            {
                 hid: "og:image:type",
                 name: "og:image:type",
                 content: "image/png",
@@ -104,6 +114,7 @@ export default {
             { rel: "icon", type: "image/x-icon", href: "/ImperialIcon.png" },
             { rel: "preconnect", href: "https://fonts.googleapis.com" },
             { rel: "preconnect", href: "https://fonts.gstatic.com" },
+            { rel: "canonical", href: "https://www.imperialhub.com.br/" },
             {
                 rel: "stylesheet",
                 href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap",
@@ -141,25 +152,25 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                                                                                                                                dark: {
-                                                                                                                                  primary: "#0070F3",
-                                                                                                                                  accent: colors.grey.darken3,
-                                                                                                                                  secondary: colors.amber.darken3,
-                                                                                                                                  info: colors.teal.lighten1,
-                                                                                                                                  warning: colors.amber.base,
-                                                                                                                                  error: colors.deepOrange.accent4,
-                                                                                                                                  success: colors.green.accent3,
-                                                                                                                                },
-                                                                                                                              }, */
+                                                                                                                                                  dark: {
+                                                                                                                                                    primary: "#0070F3",
+                                                                                                                                                    accent: colors.grey.darken3,
+                                                                                                                                                    secondary: colors.amber.darken3,
+                                                                                                                                                    info: colors.teal.lighten1,
+                                                                                                                                                    warning: colors.amber.base,
+                                                                                                                                                    error: colors.deepOrange.accent4,
+                                                                                                                                                    success: colors.green.accent3,
+                                                                                                                                                  },
+                                                                                                                                                }, */
         },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: [
         /*  {
-                                                                                      src: "nuxt.config.js",
-                                                                                      use: "@nuxtjs/vercel-builder",
-                                                                                      config: {},
-                                                                                    }, */
+                                                                                                  src: "nuxt.config.js",
+                                                                                                  use: "@nuxtjs/vercel-builder",
+                                                                                                  config: {},
+                                                                                                }, */
     ],
 };
