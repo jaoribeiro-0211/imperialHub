@@ -41,7 +41,7 @@ export default {
             {
                 hid: "twitter:image",
                 name: "twitter:image",
-                content: "/wallpaperImperialHub.png",
+                content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
             },
             /* Facebook */
             {
@@ -67,7 +67,7 @@ export default {
             {
                 hid: "og:image",
                 name: "og:image",
-                content: "https://www.imperialhub.com.br/Logo%20ImperialHub%20-%20Dark.png",
+                content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
             },
             {
                 hid: "og:image:type",
@@ -127,25 +127,25 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                                                                                                              dark: {
-                                                                                                                primary: "#0070F3",
-                                                                                                                accent: colors.grey.darken3,
-                                                                                                                secondary: colors.amber.darken3,
-                                                                                                                info: colors.teal.lighten1,
-                                                                                                                warning: colors.amber.base,
-                                                                                                                error: colors.deepOrange.accent4,
-                                                                                                                success: colors.green.accent3,
-                                                                                                              },
-                                                                                                            }, */
+                                                                                                                    dark: {
+                                                                                                                      primary: "#0070F3",
+                                                                                                                      accent: colors.grey.darken3,
+                                                                                                                      secondary: colors.amber.darken3,
+                                                                                                                      info: colors.teal.lighten1,
+                                                                                                                      warning: colors.amber.base,
+                                                                                                                      error: colors.deepOrange.accent4,
+                                                                                                                      success: colors.green.accent3,
+                                                                                                                    },
+                                                                                                                  }, */
         },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: [
         /*  {
-                                                                          src: "nuxt.config.js",
-                                                                          use: "@nuxtjs/vercel-builder",
-                                                                          config: {},
-                                                                        }, */
+                                                                              src: "nuxt.config.js",
+                                                                              use: "@nuxtjs/vercel-builder",
+                                                                              config: {},
+                                                                            }, */
     ],
 };
