@@ -21,11 +21,11 @@ export default {
                 name: "description",
                 content: "ImperialHub - Com a ImperialHub voce aumenta seus lucros, disparando mensagens com uma taxa de abertura acima de 95%.",
             },
-            {
-                hid: "image",
-                name: "image",
-                content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
-            },
+            /*   {
+                      hid: "image",
+                      name: "image",
+                      content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
+                  }, */
             {
                 hid: "robots",
                 name: "robots",
@@ -152,25 +152,25 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                                                                                                                                                  dark: {
-                                                                                                                                                    primary: "#0070F3",
-                                                                                                                                                    accent: colors.grey.darken3,
-                                                                                                                                                    secondary: colors.amber.darken3,
-                                                                                                                                                    info: colors.teal.lighten1,
-                                                                                                                                                    warning: colors.amber.base,
-                                                                                                                                                    error: colors.deepOrange.accent4,
-                                                                                                                                                    success: colors.green.accent3,
-                                                                                                                                                  },
-                                                                                                                                                }, */
+                                                                                                                                                        dark: {
+                                                                                                                                                          primary: "#0070F3",
+                                                                                                                                                          accent: colors.grey.darken3,
+                                                                                                                                                          secondary: colors.amber.darken3,
+                                                                                                                                                          info: colors.teal.lighten1,
+                                                                                                                                                          warning: colors.amber.base,
+                                                                                                                                                          error: colors.deepOrange.accent4,
+                                                                                                                                                          success: colors.green.accent3,
+                                                                                                                                                        },
+                                                                                                                                                      }, */
         },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: [
         /*  {
-                                                                                                  src: "nuxt.config.js",
-                                                                                                  use: "@nuxtjs/vercel-builder",
-                                                                                                  config: {},
-                                                                                                }, */
+                                                                                                      src: "nuxt.config.js",
+                                                                                                      use: "@nuxtjs/vercel-builder",
+                                                                                                      config: {},
+                                                                                                    }, */
     ],
 };
