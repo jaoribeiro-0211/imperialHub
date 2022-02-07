@@ -11,6 +11,7 @@ export default {
         meta: [
             { charset: "utf-8" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
+            /* Twitter */
             {
                 hid: "description",
                 name: "description",
@@ -30,6 +31,32 @@ export default {
                 hid: "twitter:url",
                 name: "twitter:url",
                 content: "https://www.imperialhub.com.br/",
+            },
+            /* Facebook */
+            {
+                hid: "og:url",
+                name: "og:url",
+                content: "https://www.imperialhub.com.br/",
+            },
+            {
+                hid: "og:type",
+                name: "og:type",
+                content: "website",
+            },
+            {
+                hid: "og:title",
+                name: "og:title",
+                content: "ImperialHub",
+            },
+            {
+                hid: "og:description",
+                name: "og:description",
+                content: "ImperialHub - Com a ImperialHub voce aumenta seus lucros, disparando mensagens com uma taxa de abertura acima de 95%.",
+            },
+            {
+                hid: "og:image",
+                name: "og:image",
+                content: "https://www.imperialhub.com.br/Logo%20ImperialHub%20-%20Dark.png",
             },
             { name: "format-detection", content: "telephone=no" },
         ],
@@ -74,25 +101,25 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                          dark: {
-                            primary: "#0070F3",
-                            accent: colors.grey.darken3,
-                            secondary: colors.amber.darken3,
-                            info: colors.teal.lighten1,
-                            warning: colors.amber.base,
-                            error: colors.deepOrange.accent4,
-                            success: colors.green.accent3,
-                          },
-                        }, */
+                                                              dark: {
+                                                                primary: "#0070F3",
+                                                                accent: colors.grey.darken3,
+                                                                secondary: colors.amber.darken3,
+                                                                info: colors.teal.lighten1,
+                                                                warning: colors.amber.base,
+                                                                error: colors.deepOrange.accent4,
+                                                                success: colors.green.accent3,
+                                                              },
+                                                            }, */
         },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: [
         /*  {
-                  src: "nuxt.config.js",
-                  use: "@nuxtjs/vercel-builder",
-                  config: {},
-                }, */
+                                          src: "nuxt.config.js",
+                                          use: "@nuxtjs/vercel-builder",
+                                          config: {},
+                                        }, */
     ],
 };
