@@ -11,11 +11,17 @@ export default {
         meta: [
             { charset: "utf-8" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
-            /* Twitter */
+
             {
                 hid: "description",
                 name: "description",
                 content: "ImperialHub - Com a ImperialHub voce aumenta seus lucros, disparando mensagens com uma taxa de abertura acima de 95%.",
+            },
+            /* Twitter */
+            {
+                hid: "twitter:card",
+                name: "twitter:card",
+                content: "summary_large_image",
             },
             {
                 hid: "twitter:title",
@@ -25,12 +31,17 @@ export default {
             {
                 hid: "twitter:description",
                 name: "twitter:description",
-                content: "ImperialHub - Com a ImperialHub voce aumenta seus lucros, disparando mensagens com uma taxa de abertura acima de 95%.",
+                content: "Com a ImperialHub voce aumenta seus lucros, disparando mensagens com uma taxa de abertura acima de 95%.",
             },
             {
                 hid: "twitter:url",
                 name: "twitter:url",
                 content: "https://www.imperialhub.com.br/",
+            },
+            {
+                hid: "twitter:image",
+                name: "twitter:image",
+                content: "/wallpaperImperialHub.png",
             },
             /* Facebook */
             {
@@ -57,6 +68,21 @@ export default {
                 hid: "og:image",
                 name: "og:image",
                 content: "https://www.imperialhub.com.br/Logo%20ImperialHub%20-%20Dark.png",
+            },
+            {
+                hid: "og:image:type",
+                name: "og:image:type",
+                content: "image/png",
+            },
+            {
+                hid: "og:image:width",
+                name: "og:image:width",
+                content: "1920",
+            },
+            {
+                hid: "og:image:height",
+                name: "og:image:height",
+                content: "1080",
             },
             { name: "format-detection", content: "telephone=no" },
         ],
@@ -101,25 +127,25 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                                                              dark: {
-                                                                primary: "#0070F3",
-                                                                accent: colors.grey.darken3,
-                                                                secondary: colors.amber.darken3,
-                                                                info: colors.teal.lighten1,
-                                                                warning: colors.amber.base,
-                                                                error: colors.deepOrange.accent4,
-                                                                success: colors.green.accent3,
-                                                              },
-                                                            }, */
+                                                                                                              dark: {
+                                                                                                                primary: "#0070F3",
+                                                                                                                accent: colors.grey.darken3,
+                                                                                                                secondary: colors.amber.darken3,
+                                                                                                                info: colors.teal.lighten1,
+                                                                                                                warning: colors.amber.base,
+                                                                                                                error: colors.deepOrange.accent4,
+                                                                                                                success: colors.green.accent3,
+                                                                                                              },
+                                                                                                            }, */
         },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: [
         /*  {
-                                          src: "nuxt.config.js",
-                                          use: "@nuxtjs/vercel-builder",
-                                          config: {},
-                                        }, */
+                                                                          src: "nuxt.config.js",
+                                                                          use: "@nuxtjs/vercel-builder",
+                                                                          config: {},
+                                                                        }, */
     ],
 };
