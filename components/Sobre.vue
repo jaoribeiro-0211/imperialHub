@@ -17,7 +17,7 @@
       </div>
       <div class="gridCampanha card" v-scroll-reveal.reset="{ delay: 200 }">
         <list-icon size="3x" class="icon_costum"></list-icon>
-        <span>Multiplas campanhas</span>
+        <span>Múltiplas campanhas</span>
         <p>Ganhe agilidade ao ter vários Whatsapps disparando mensagens.</p>
       </div>
       <div class="gridIntervalo card" v-scroll-reveal.reset="{ delay: 100 }">
