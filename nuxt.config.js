@@ -3,7 +3,7 @@ import colors from "vuetify/es5/util/colors";
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: "%s ",
+        titleTemplate: "%s",
         title: "ImperialHub",
         htmlAttrs: {
             lang: "pt-BR",
@@ -27,11 +27,6 @@ export default {
                 content: "index,follow",
             },
 
-            /*   {
-                                                                                              hid: "image",
-                                                                                              name: "image",
-                                                                                              content: "https://www.imperialhub.com.br/wallpaperImperialHub.png",
-                                                                                          }, */
             {
                 hid: "robots",
                 name: "robots",
@@ -133,7 +128,10 @@ export default {
     css: ["@/assets/styleGlobal.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [{ src: "~/plugins/vue-scroll-reveal", ssr: false, mode: "client" }],
+    plugins: [
+        { src: "~/plugins/vue-scroll-reveal", ssr: false, mode: "client" },
+        { src: "~/plugins/gtm.js", mode: "client" },
+    ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -149,11 +147,11 @@ export default {
         // https://go.nuxtjs.dev/axios
         "@nuxtjs/axios",
         "@nuxtjs/robots",
-        "@nuxtjs/gtm",
+        /* "@nuxtjs/gtm", */
     ],
-    gtm: {
-        id: "GTM-TPWMMS6",
-    },
+    /* gtm: {
+                id: "GTM-K8XMLJH",
+            }, */
     robots: {
         /* module options */
         UserAgent: "*",
@@ -168,16 +166,16 @@ export default {
         theme: {
             dark: false,
             /*  themes: {
-                                                                                                                                                                                                                                dark: {
-                                                                                                                                                                                                                                  primary: "#0070F3",
-                                                                                                                                                                                                                                  accent: colors.grey.darken3,
-                                                                                                                                                                                                                                  secondary: colors.amber.darken3,
-                                                                                                                                                                                                                                  info: colors.teal.lighten1,
-                                                                                                                                                                                                                                  warning: colors.amber.base,
-                                                                                                                                                                                                                                  error: colors.deepOrange.accent4,
-                                                                                                                                                                                                                                  success: colors.green.accent3,
-                                                                                                                                                                                                                                },
-                                                                                                                                                                                                                              }, */
+                                                                                                                                                                                                                                                                          dark: {
+                                                                                                                                                                                                                                                                            primary: "#0070F3",
+                                                                                                                                                                                                                                                                            accent: colors.grey.darken3,
+                                                                                                                                                                                                                                                                            secondary: colors.amber.darken3,
+                                                                                                                                                                                                                                                                            info: colors.teal.lighten1,
+                                                                                                                                                                                                                                                                            warning: colors.amber.base,
+                                                                                                                                                                                                                                                                            error: colors.deepOrange.accent4,
+                                                                                                                                                                                                                                                                            success: colors.green.accent3,
+                                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                                        }, */
         },
     },
 
